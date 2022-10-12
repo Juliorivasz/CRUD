@@ -1,14 +1,3 @@
 {
-  "perfil": [
-    {
-      "nombre": "Julius",
-      "email": "juliusars2000@gmail.com",
-      "id": "e69c6500-0c70-46e2-88c8-18f8da8a69ba"
-    },
-    {
-      "nombre": "Julio",
-      "email": "julioandresrivas@gmail.com",
-      "id": "51ac5385-667a-4d17-b797-b47c8052fdaa"
-    }
-  ]
+  "perfil": []
 }
