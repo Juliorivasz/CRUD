@@ -51,10 +51,10 @@ elimine en lista cliente
     // return promise;
 
 //fetch API
-const listaClientes = () => fetch('http://localhost:3000/perfil').then((respuesta) => respuesta.json());
+const listaClientes = () => fetch(`${window.location.path}/perfil`).then((respuesta) => respuesta.json());
 
 const crearClientes = (nombre, email) => {
-    return fetch('http://localhost:3000/perfil', {
+    return fetch(`${window.location.path}/perfil`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -65,17 +65,17 @@ const crearClientes = (nombre, email) => {
 
 const eliminarCliente = (id) =>{
     console.log(id);
-    return fetch(`http://localhost:3000/perfil/${id}`, {
+    return fetch(`${window.location.path}/perfil/${id}`, {
         method: 'DELETE'
     });
 };
 
 const detalleCliente = (id) =>{
-    return fetch(`http://localhost:3000/perfil/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`${window.location.path}/perfil/${id}`).then((respuesta) => respuesta.json());
 };
 
 const actualizarCliente = (nombre,email,id) =>{
-    return fetch(`http://localhost:3000/perfil/${id}`, {
+    return fetch(`${window.location.path}/perfil/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
