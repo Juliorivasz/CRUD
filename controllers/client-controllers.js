@@ -15,12 +15,13 @@ const crearNuevaLinea = (nombre,email,id) => {
                   >
                 </li>
                 <li>
-                  <a href="../screens/lista_cliente.html"
+                  <button
                     class="simple-button simple-button--delete"
                     id = "${id}"
+                    type="button"
                   >
                     Eliminar
-                  </a>
+                  </button>
                 </li>
               </ul>
             </td>`;
@@ -29,7 +30,9 @@ const crearNuevaLinea = (nombre,email,id) => {
     const btn = linea.querySelector('.simple-button--delete');
     btn.addEventListener('click', ()=>{
         clientServices.eliminarCliente(id)
-        .then(() => {})
+        .then(() => {
+          alert(`${nombre} eliminado con exito`)
+        })
         .catch((error) =>{ alert('ocurrio algo inesperado')
       console.log(error)});
     });
