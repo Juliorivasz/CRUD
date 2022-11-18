@@ -32,7 +32,7 @@ const crearNuevaLinea = (nombre,email,id) => {
         clientServices.eliminarCliente(id)
         .then(() => {
           alert(`${nombre} eliminado con exito`);
-          window.location.href="/CRUD/screens/registro_completado.html"
+          window.location.href="/CRUD/lista_cliente.html"
         })
         .catch((error) =>{ alert('ocurrio algo inesperado')
       console.log(error)});
