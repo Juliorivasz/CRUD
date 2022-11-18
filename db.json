@@ -1,24 +1,3 @@
 {
-  "perfil": [
-    {
-      "nombre": "Julius",
-      "email": "rexdaro@gmail.com",
-      "id": "81ac3ba8-8925-4afc-bcfe-5f196683d703"
-    },
-    {
-      "nombre": "Julio andres",
-      "email": "juliusars2000@gmail.com",
-      "id": "df5f836b-30bb-4885-9b8d-94681ca89338"
-    },
-    {
-      "nombre": "Julio andres",
-      "email": "juliusars2000@gmail.com",
-      "id": "e15d444c-db0c-4072-a42d-aa232f04cb69"
-    },
-    {
-      "nombre": "Emiliano Gabriel",
-      "email": "julioandresrivas@gmail.com",
-      "id": "b720c7f3-30c5-4c0a-b036-20da8fb101d8"
-    }
-  ]
+  "perfil": []
 }
