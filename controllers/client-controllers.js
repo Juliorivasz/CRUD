@@ -31,7 +31,8 @@ const crearNuevaLinea = (nombre,email,id) => {
     btn.addEventListener('click', ()=>{
         clientServices.eliminarCliente(id)
         .then(() => {
-          alert(`${nombre} eliminado con exito`)
+          alert(`${nombre} eliminado con exito`);
+          window.location.href="/CRUD/screens/registro_completado.html"
         })
         .catch((error) =>{ alert('ocurrio algo inesperado')
       console.log(error)});
