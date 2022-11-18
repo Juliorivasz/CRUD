@@ -30,7 +30,8 @@ const crearNuevaLinea = (nombre,email,id) => {
     const btn = linea.querySelector('.simple-button--delete');
     btn.addEventListener('click', ()=>{
         clientServices.eliminarCliente(id)
-        .then(() => alert(`el cliente ${nombre} fue eliminado`))
+        .then(() => {alert(`el cliente ${nombre} fue eliminado`);
+            return linea;})
         .catch((error) => alert('ocurrio algo inesperado'));
     });
     return linea;
