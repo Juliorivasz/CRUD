@@ -7,6 +7,6 @@ formulario.addEventListener('submit', (evento)=>{
     const email = document.querySelector('[data-email').value;
     clientServices
     .crearClientes(nombre,email)
-    .then(() => {window.location.href = 'CRUD/screens/registro_completado.html'})
+    .then(() => {window.location.href = '/CRUD/screens/registro_completado.html'})
     .catch((error)=>{ console.log(error)});
 });
